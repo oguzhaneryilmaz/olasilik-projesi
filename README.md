@@ -4,8 +4,8 @@ Projemizin Site Sayfası -> http://olasilikislem.coolpage.biz
 
 Hazırlayanlar :
 
-Batuhan Ankara
-Zeynep Demirel
-Oğuzhan Eryılmaz
-Nurseda Diker
+Batuhan Ankara <br>
+Zeynep Demirel<br>
+Oğuzhan Eryılmaz<br>
+Nurseda Diker<br>
 Melis Varan
