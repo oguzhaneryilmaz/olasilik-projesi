@@ -1,0 +1,255 @@
+/*body{
+    background: linear-gradient(#f4f9f9,#b2ebf2,#f4f9f9);
+    
+}*/
+.container{
+    border: 2px solid #073857;
+    background-color: #e3f1f8;
+    border-radius: 8px;
+    width: 75%;
+    max-width: 790px;
+    margin: 10px auto 15px auto;
+    padding: 16px;
+
+}
+.container::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.container h3{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+
+}
+.container p{
+    font-size: 18px;
+    text-align: center;
+    color: #DD2C00;
+}
+#data{
+	width: 70%;
+	margin: 0 auto;	
+	text-align: left;
+}
+
+.form-group {
+	border-bottom: 1px solid #e9ecef;
+	margin-bottom: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.btn-coloreffect {
+    background: linear-gradient(-45deg, #dda999, #eb9bb9, #e1e787, #7ce2cc, #e9b4ce, #ffffff);
+	background-size: 800% 800%;
+	animation: gradient 15s ease infinite;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 80x;
+    height: 50px;
+    margin-top: 8px;
+}
+
+.form-group input,.form-group textarea {
+	border: none;
+	width: 100%;
+	display: block;
+	font-size: 2.4rem;
+	
+}
+
+.form-group input:focus {
+	outline: 0;
+}
+.histogram{
+    border: 2px solid #073857;
+    max-width: 790px;
+    padding: 5px;
+    border-radius: 8px;
+    margin: 10px auto;
+    text-align: center;
+}
+header{
+    border: 2px solid #0dceda;
+    text-align: center;
+    padding: .5em;
+    color: #f57170;
+    font-size: 20px;
+                   
+}           
+.data-heading{
+    color: inherit;
+}
+li {
+    background: linear-gradient(-45deg, #dda999, #eb9bb9, #e1e787, #7ce2cc, #e9b4ce, #ffffff);
+	background-size: 800% 800%;
+	animation: gradient 15s ease infinite;
+    position: relative;
+    padding: .75rem 1.25rem;
+    width: 100%;
+    margin: 0 auto 0 5px;
+}
+ul {
+    display: flex;
+    list-style: none;
+}
+.selectButtons button{
+                    
+    border: 2px solid #52bad5;
+    background-color:#52bad5;
+    color: black;
+    height: 40px;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left;
+    
+}
+.selectButtons::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.selectButtons button:not(:last-child){
+    border-right:none;
+}
+.selectButtons button:hover{
+    background-color:#239ab9;
+}
+
+@media (max-width:500px){
+    .container{
+        text-align: center;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#slider-wrapper{
+    position: relative;
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+    margin: auto;
+    border-style: solid;
+}
+
+.img-bir,.img-iki,.img-uc,.img-dort{
+    position: absolute;
+    width: 700px;
+    height: 400px;
+}
+
+.img-bir{left:0px;}
+.img-iki{left:700px;}
+.img-uc{left:1400px;}
+.img-dort{left:2100px;}
+
+#slider-wrapper > .slider{
+    position: absolute;
+    left: 0px;
+    width: 700px;
+    height: 400px;
+    -webkit-animation-name: sliders;
+    -webkit-animation-duration: 30s ;
+    -webkit-animation-iteration-count: infinite;
+}
+
+#slider-wrapper > .slider:hover{
+    -webkit-animation-play-state: paused;
+}
+
+@-webkit-keyframes sliders{
+    0%{left: 0px;}
+    10%{left: 0px;}
+    20%{left: -700px;}
+    30%{left: -700px;}
+    40%{left: -1400px;}
+    50%{left: -1400px;}
+    60%{left: -2100px;}
+    70%{left: -2100px;}
+}
+
+.container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: .5rem;
+	padding-right: .5rem;
+}
+
+@media (min-width: 576px) {
+	
+	.container {
+		max-width: 540px;
+	}
+	
+	html {
+		font-size: 7px;
+	}	
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+	
+	html {
+		font-size: 8px;
+	}
+	
+	.col {
+		width: 50%;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		max-width: 960px;	
+	}
+	
+	html {
+		font-size: 9px;
+	}
+	
+	.col {
+		width: 50%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+	
+	html {
+		font-size: 10px;
+	}
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+hr.star-light {
+	border-color: #f57170;
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+

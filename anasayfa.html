@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+	<script>
+		function diziolustur()
+		{
+			var data;
+			data =document.getElementById("data").value;
+			var parcalanmis = data.split(",");
+			var uzunluk = parcalanmis.length;
+
+			for(var i = 0;i<uzunluk;i++){
+				Number(parcalanmis[i]);
+			}
+		} 
+	   </script>
+
+
+
+
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Olasılık ve İstatistik</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+	<link rel="stylesheet" href="anasayfa.css">
+	
+	<link rel="stylesheet" href="script.js">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+
+</head>
+
+<body>
+
+	<nav>
+		<div class="container clearfix">
+
+			<div id="logo-box">
+				<a href="/" class="logo text-uppercase hsphvr">
+					Hesaplama
+				</a>
+			</div>
+
+			<div id="nav-links" class="responsive">
+				<ul>
+
+					<li class="nav-item">
+						<a href="#" class="nav-link text-uppercase nav-icon">
+							<i class="fas fa-bars"></i>
+						</a>
+					</li>
+
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link text-uppercase">
+							İletişim
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<header>
+		<div class="container">
+			<img id="profile-image" class="img-fluid" src="img/profile.png" alt="">
+			<h1 class="text-uppercase">Tüm İşlemler Tek Adreste</h1>
+			<hr class="star-light">
+			<h2>
+				Olasılık İşlemleri İçin Hesaplamalar
+				<div id="slider-wrapper">
+					<div class="slider">
+						<a href="" class="img-bir">
+							<img src="resim/first.png" alt="">
+						</a>
+						<a href="" class="img-iki">
+							<img src="resim/second.png" alt="">
+						</a>
+						<a href="" class="img-uc">
+							<img src="resim/third.png" alt="">
+						</a>
+						<a href="" class="img-dort">
+							<img src="resim/fourth.png" alt="">
+						</a>
+					</div>
+				</div>
+			</h2>
+		</div>
+	</header>
+
+	<section id="portfolio">
+		<div class="container">
+			<h2 class="text-uppercase">
+				Başlayalım
+			</h2>
+			<hr class="star-dark">
+
+			<form id="contact-form">
+
+
+				<div class="form-group">
+					<textarea id="data" rows="5" placeholder="Veri setini girin"></textarea>
+				</div>
+				<div>
+					<button class="btn btn-primary btn-hesapla" id="numberData">
+						<a href="olasılık_sonuc.html">HESAPLA</a>
+					</button>
+				</div>
+
+				
+
+			</form>
+
+	
+			
+		</div>
+	</section>
+
+	<section id="about">
+		<h2 class="text-uppercase">Source Codes</h2>
+
+		<hr class="star-light">
+
+		<div id="about-text" class="clearfix">
+
+			<div class="left">
+				<p class="text">
+					Sayfadaki tüm işlemlerin ve sitenin kodları için aşağıdaki butona tıkla.
+				</p>
+			</div>
+			<div class="right">
+				<p class="text">
+					Bu ve bunun gibi daha fazla proje için sosyal medyada bizi takip edip destek olmayı unutma.
+				</p>
+			</div>
+
+		</div>
+
+		<button class="btn btn-outline btn-large">
+			<i class="fas fa-download"></i>
+			<a href="https://github.com/zeynep-dmrl/olasilik">Download Now!</a>
+		</button>
+	</section>
+
+
+	<footer>
+		<div class="container clearfix">
+
+
+			<div class="col">
+				<h4 class="text-uppercase">Bizi Takip Edin</h4>
+				<ul>
+
+					<li>
+						<button class="btn btn-outline btn-social">
+							<i class="fab fa-fw fa-facebook-f"></i>
+						</button>
+					</li>
+
+					<li>
+						<button class="btn btn-outline btn-social">
+							<i class="fab fa-fw fa-twitter"></i>
+						</button>
+					</li>
+
+					<li>
+						<button class="btn btn-outline btn-social">
+							<i class="fab fa-fw fa-linkedin-in"></i>
+						</button>
+					</li>
+
+				</ul>
+			</div>
+			<div class="col">
+				<h4 class="text-uppercase">Ne Yapıyoruz?</h4>
+				<p>
+					Olasılık ve istatistik problemleriniz için gerekli olan tüm hesaplamaları yapıyoruz ve sizlere aktarıyoruz.
+				</p>
+			</div>
+
+		</div>
+	</footer>
+
+	<div class="copyright">
+		<div class="container">
+			<small>
+				Copyright © Your Website 2018
+			</small>
+		</div>
+	</div>
+	<script src="handler.js"></script>
+
+</body>
+
+</html>

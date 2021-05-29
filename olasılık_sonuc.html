@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Olasılık Projesi</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"> </script>
+
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+
+    </head>
+    <body>
+        <header><div class="container">
+			<img id="profile-image" class="img-fluid" src="img/profile.png" alt="">
+			<h1 class="text-uppercase">Tüm İşlemler Tek Adreste</h1>
+			<hr class="star-light">
+			<h2>
+				Olasılık İşlemleri İçin Hesaplamalar
+				<div id="slider-wrapper">
+					<div class="slider">
+						<a href="" class="img-bir">
+							<img src="resim/first.png" alt="">
+						</a>
+						<a href="" class="img-iki">
+							<img src="resim/second.png" alt="">
+						</a>
+						<a href="" class="img-uc">
+							<img src="resim/third.png" alt="">
+						</a>
+						<a href="" class="img-dort">
+							<img src="resim/fourth.png" alt="">
+						</a>
+					</div>
+				</div>
+			</h2>
+		</div></header>
+        
+        <header>
+            <h1>SONUCLAR</h1>
+        </header>
+        
+        <ul>
+            <li>
+                <!--
+                <h2 class="data-heading">Veri setiniz: </h2>
+                <p id="dataSet" style="word-break: break-all;font-family:Courier!important"></p>
+            -->
+                
+                <textarea id="data" class ="form-group" rows="9" placeholder="Veri setini girin"></textarea>
+                <button class="btn-coloreffect" id="numberData" onclick="sayfa()">HESAPLA
+            </button>
+            
+                <p style="text-align: center; font-size: 18px;">Yeni veri seti girmek için <a href= "olasılık_sonuc.html">tıklayınız.</a></p>
+            </li>
+        </ul>
+
+        
+        <br><br>
+        <div class="container" id="mod" >
+            <u><h3>Mod</h3></u>
+            <p id="modsonuc"></p>
+        </div>
+        <div class="container" id="medyan" >
+            <u><h3>Medyan</h3></u>
+            <p id="medyansonuc"></p>
+        </div>
+        <div class="container" id="sapma" >
+            <u><h3>Standart Sapma</h3></u>
+            <p id="sapmasonuc"></p>
+        </div>
+        <div class="container" id="varyans">
+            <u><h3>Varyans</h3></u>
+            <p id="varyanssonuc"></p>
+        </div>
+        <div class="container" id="aort" >
+            <u><h3>Aritmetik Ortalama</h3></u>
+            <p id="aortsonuc"></p>
+        </div>
+        <div class="container" id="hort" >
+            <u><h3>Harmonik Ortalama</h3></u>
+            <p id="hortsonuc"></p>
+        </div>
+        <div class="container" id="gort" >
+            <u><h3>Geometrik Ortalama</h3></u>
+            <p id="gortsonuc"></p>
+        </div>
+        <div class="container" id="osapma">
+            <u><h3>Ortalama Sapma</h3></u>
+            <p id="osapmasonuc"></p>
+        </div>
+        <div class="container" id="dkatsayısı" >
+            <u><h3>Değişim Katsayısı</h3></u>
+            <p id="dkatsayısısonuc"></p>
+        </div>
+
+        <div class="histogram" id="histogram">
+            <canvas id="chart" style ="width:100%;max-width:600px;max-height:600px"></canvas>
+        </div>
+
+        
+        <script src="kodlar.js"></script>
+        <script src="app.js"></script>
+        
+        
+        
+    
+
+    </body>
+</html>
